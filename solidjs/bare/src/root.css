@@ -6,8 +6,13 @@ html {
 }
 
 main {
-    margin: 2rem;
     text-align: center;
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 a {
