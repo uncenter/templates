@@ -14,13 +14,13 @@ npx degit uncenter/templates/<template> my-app
 
 All Solid projects are configured to work with [Vercel](https://vercel.com/) out of the box (using the `solid-start-vercel` adapter) and use [TypeScript](https://www.typescriptlang.org/) by default.
 
--   `bare`: A barebones Solid project, with no additional libraries or frameworks.
+-   `bare`: A barebones Solid project, with no additional libraries or frameworks ([preview](https://templates-solidjs-bare.vercel.app/)).
 
 ```sh
 npx degit uncenter/templates/solidjs/bare my-app
 ```
 
--   `tailwind`: A Solid project with [Tailwind CSS](https://tailwindcss.com/) support.
+-   `tailwind`: A Solid project with [Tailwind CSS](https://tailwindcss.com/) support ([preview](https://templates-solidjs-tailwind.vercel.app/)).
 
 ```sh
 npx degit uncenter/templates/solidjs/tailwind my-app
