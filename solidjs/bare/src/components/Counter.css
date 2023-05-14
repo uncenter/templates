@@ -21,8 +21,6 @@
 .button-group button {
     font-family: inherit;
     font-size: 100%;
-    font-weight: inherit;
-    line-height: inherit;
     cursor: pointer;
     border: none;
     margin: 0;
