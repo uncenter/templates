@@ -1,5 +1,3 @@
-# uncenter's SolidStart Templates
-
 Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com), [`TypeScript`](https://www.typescriptlang.org/), and [`Tailwind CSS`](https://tailwindcss.com/). Works with Vercel out of the box.
 
 > **Note**: This template is based on [`solidjs/templates/ts`](https://github.com/solidjs/templates/tree/master/ts), but with some additional customisations.
