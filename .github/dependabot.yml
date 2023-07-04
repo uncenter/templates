@@ -1,0 +1,11 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/solidjs/bare"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/solidjs/tailwind"
+    schedule:
+      interval: "weekly"
