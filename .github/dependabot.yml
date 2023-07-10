@@ -5,7 +5,15 @@ updates:
     directory: "/solidjs/bare"
     schedule:
       interval: "weekly"
+    groups:
+      bare-deps:
+        patterns:
+          - "*"
   - package-ecosystem: "npm"
     directory: "/solidjs/tailwind"
     schedule:
       interval: "weekly"
+    groups:
+      tailwind-deps:
+        patterns:
+          - "*"
