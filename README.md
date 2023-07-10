@@ -1,4 +1,9 @@
-# uncenter/templates
+<h1>uncenter/templates</h1>
+
+[![SolidJS](https://img.shields.io/badge/SolidJS-374F6A?style=flat-square&logo=solid&logoColor=white)](https://solidjs.com)
+[![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://typescriptlang.org/)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+
 
 This repository contains templates for [Solid](https://www.solidjs.com/) projects, powered by [`solid-start`](https://start.solidjs.com), but will also have templates for other frameworks and libraries in the future. Mostly, this is just a place for me to store templates that I use for my own projects, but feel free to use them if you want.
 
