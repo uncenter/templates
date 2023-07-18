@@ -6,14 +6,6 @@
         "start": "solid-start start"
     },
     "type": "module",
-    "devDependencies": {
-        "autoprefixer": "^10.4.14",
-        "postcss": "^8.4.26",
-        "solid-start-node": "^0.2.26",
-        "tailwindcss": "^3.3.3",
-        "typescript": "^5.1.6",
-        "vite": "^4.4.4"
-    },
     "dependencies": {
         "@solidjs/meta": "^0.28.5",
         "@solidjs/router": "^0.8.2",
@@ -22,8 +14,16 @@
         "solid-start-vercel": "^0.2.26",
         "undici": "^5.22.1"
     },
+    "devDependencies": {
+        "autoprefixer": "^10.4.14",
+        "postcss": "^8.4.26",
+        "solid-start-node": "^0.2.26",
+        "tailwindcss": "^3.3.3",
+        "typescript": "^5.1.6",
+        "vite": "^4.4.4"
+    },
     "engines": {
         "node": ">=16"
     },
-    "packageManager": "pnpm@8.6.6"
+    "packageManager": "pnpm@8.6.8"
 }

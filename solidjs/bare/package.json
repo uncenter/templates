@@ -15,8 +15,6 @@
         "undici": "^5.22.1"
     },
     "devDependencies": {
-        "@types/node": "^20.4.2",
-        "esbuild": "^0.18.13",
         "postcss": "^8.4.26",
         "solid-start-node": "^0.2.26",
         "typescript": "^5.1.6",
@@ -25,5 +23,5 @@
     "engines": {
         "node": ">=16.8"
     },
-    "packageManager": "pnpm@8.6.6"
+    "packageManager": "pnpm@8.6.8"
 }
