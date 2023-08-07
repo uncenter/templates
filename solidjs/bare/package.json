@@ -9,16 +9,16 @@
     "dependencies": {
         "@solidjs/meta": "^0.28.6",
         "@solidjs/router": "^0.8.2",
-        "solid-js": "^1.7.8",
-        "solid-start": "^0.2.29",
-        "solid-start-vercel": "^0.2.29",
-        "undici": "^5.22.1"
+        "solid-js": "^1.7.9",
+        "solid-start": "^0.2.30",
+        "solid-start-vercel": "^0.2.30",
+        "undici": "^5.23.0"
     },
     "devDependencies": {
         "postcss": "^8.4.27",
-        "solid-start-node": "^0.2.29",
+        "solid-start-node": "^0.2.30",
         "typescript": "^5.1.6",
-        "vite": "^4.4.7"
+        "vite": "^4.4.9"
     },
     "engines": {
         "node": ">=16.8"
