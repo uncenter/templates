@@ -5,11 +5,15 @@
 	"extends": [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
+		"plugin:unicorn/recommended",
 		"prettier"
 	],
 	"parserOptions": {
 		"ecmaVersion": "latest",
 		"sourceType": "module"
+	},
+	"rules": {
+		"unicorn/no-useless-undefined": ["error", { "checkArguments": false }]
 	},
 	"overrides": [
 		{
