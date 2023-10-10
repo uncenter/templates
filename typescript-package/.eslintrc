@@ -13,7 +13,8 @@
 		"sourceType": "module"
 	},
 	"rules": {
-		"unicorn/no-useless-undefined": ["error", { "checkArguments": false }]
+		"unicorn/no-useless-undefined": ["error", { "checkArguments": false }],
+		"unicorn/text-encoding-identifier-case": 0
 	},
 	"overrides": [
 		{

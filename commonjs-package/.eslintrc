@@ -1,13 +1,10 @@
 {
 	"root": true,
 	"plugins": ["unicorn"],
-	"extends": [
-		"eslint:recommended",
-		"plugin:unicorn/recommended",
-		"prettier"
-	],
+	"extends": ["eslint:recommended", "plugin:unicorn/recommended", "prettier"],
 	"rules": {
-		"unicorn/no-useless-undefined": ["error", { "checkArguments": false }]
+		"unicorn/no-useless-undefined": ["error", { "checkArguments": false }],
+		"unicorn/text-encoding-identifier-case": 0
 	},
 	"overrides": [
 		{
