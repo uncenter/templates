@@ -1,0 +1,32 @@
+{
+	"name": "<package-name>",
+	"version": "0.1.0",
+	"description": "",
+	"author": "uncenter <hi@uncenter.dev>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/uncenter/<package-name>.git"
+	},
+	"license": "MIT",
+	"files": [
+		"README.md",
+		"LICENSE",
+		"dist/"
+	],
+	"main": "./src/index.js",
+	"type": "commonjs",
+	"scripts": {
+		"test": "vitest",
+		"lint": "eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"eslint": "^8.51.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-unicorn": "^48.0.1",
+		"eslint-plugin-vitest": "^0.3.2",
+		"prettier": "^3.0.3",
+		"vitest": "^0.34.6"
+	},
+	"packageManager": "pnpm@8.9.0"
+}
