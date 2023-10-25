@@ -13,6 +13,7 @@
 		"sourceType": "module"
 	},
 	"rules": {
+		"@typescript-eslint/consistent-type-imports": "error",
 		"import/consistent-type-specifier-style": ["error", "prefer-top-level"],
 		"import/no-duplicates": "error",
 		"import/first": "error",
