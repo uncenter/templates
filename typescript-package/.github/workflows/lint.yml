@@ -1,7 +1,6 @@
 name: Lint
 
 on:
-  workflow_call:
   push:
     branches: [main, dev]
 
@@ -12,9 +11,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install pnpm
+      - name: Setup pnpm
         uses: pnpm/action-setup@v2
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           cache: pnpm
