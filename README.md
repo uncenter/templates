@@ -1,8 +1,8 @@
 # Templates
 
-- [typescript-package](#typescript-package)
-- [commonjs-package](#commonjs-package)
-- [solidstart-app](#solidstart-app)
+-   [typescript-package](#typescript-package)
+-   [commonjs-package](#commonjs-package)
+-   [solidstart-app](#solidstart-app)
 
 ## `typescript-package`
 
