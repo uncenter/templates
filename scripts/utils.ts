@@ -1,9 +1,10 @@
-import { fileURLToPath } from "url";
-import YAML from "yaml";
-import { readFile } from "node:fs/promises";
-import { join, resolve } from "node:path";
+import { readFile } from 'node:fs/promises';
+import { join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-export const __dirname = fileURLToPath(new URL(".", import.meta.url));
+import YAML from 'yaml';
+
+export const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export type Package = {
 	description: string;
@@ -21,7 +22,12 @@ export type Package = {
 	};
 };
 
-export const packages = async () =>
+export type Packages = { [name: string]: Package };
+
+export const getPackages = async () =>
 	YAML.parse(
-		await readFile(resolve(join(__dirname, "../", "templates.yml")), "utf-8")
-	) as Package[];
+		await readFile(
+			resolve(join(__dirname, '../', 'templates.yml')),
+			'utf-8',
+		),
+	) as Packages;

@@ -1,5 +1,8 @@
-import { writeFile } from "node:fs/promises";
-import { packages, type Package } from "./utils";
+import type { Package, Packages } from './utils';
+
+import { writeFile } from 'node:fs/promises';
+
+import { getPackages } from './utils';
 
 function generateReadmeSection(name: string, data: Package) {
 	return `
@@ -23,22 +26,22 @@ ${Object.keys(data.sections)
 			data.sections[section]
 		}`;
 	})
-	.join("\n\n")}
+	.join('\n\n')}
 `;
 }
 
-function generateReadme(data: Package[]) {
+function generateReadme(data: Packages) {
 	return Object.keys(data)
 		.map((name: string) => {
 			return generateReadmeSection(name, data[name]);
 		})
-		.join("\n");
+		.join('\n');
 }
 
 await writeFile(
-	"README.md",
-	"# Templates\n" + generateReadme(await packages()),
-	"utf-8"
+	'README.md',
+	'# Templates\n' + generateReadme(await getPackages()),
+	'utf-8',
 );
 
-console.log("README.md generated successfully.");
+console.log('README.md generated successfully.');

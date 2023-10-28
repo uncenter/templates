@@ -1,11 +1,15 @@
-import { $ } from "execa";
-import { Package, packages } from "./utils";
+import type { Packages } from './utils';
 
-function executeTemplateFormatCommands(data: Package[]) {
-	Object.keys(data).forEach(async (name: string) => {
-		const pkg = data[name] as Package;
-		await $({ shell: true })`cd templates/${name}/ && ${pkg.commands.format}`;
-	});
+import { $ } from 'execa';
+
+import { getPackages } from './utils';
+
+async function executeTemplateFormatCommands(data: Packages) {
+	for (const [name, pkg] of Object.entries(data)) {
+		await $({
+			shell: true,
+		})`cd templates/${name}/ && ${pkg.commands.format}`;
+	}
 }
 
-executeTemplateFormatCommands(await packages());
+await executeTemplateFormatCommands(await getPackages());
