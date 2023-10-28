@@ -10,9 +10,9 @@ A ready-to-go TypeScript package template with building, testing, linting, and f
 2. Replace `<package-name>` with undefined
 3. Run the following command to install dependencies:
 
-   ```
-   pnpm install
-   ```
+    ```
+    pnpm install
+    ```
 
 ### Building
 
@@ -34,7 +34,6 @@ Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
 
 All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, linting, testing, and releasing are in `.github/workflows/`.
 
-
 ## `commonjs-package`
 
 A ready-to-go CJS package template.
@@ -45,9 +44,9 @@ A ready-to-go CJS package template.
 2. Replace `<package-name>` with undefined
 3. Run the following command to install dependencies:
 
-   ```
-   pnpm install
-   ```
+    ```
+    pnpm install
+    ```
 
 ### Testing
 
@@ -65,7 +64,6 @@ Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
 
 All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, linting, testing, and releasing are in `.github/workflows/`.
 
-
 ## `solidstart-app`
 
 A simple, bloat-free template for SolidStart/SolidJS with preconfigured formatting and linting.
@@ -76,9 +74,9 @@ A simple, bloat-free template for SolidStart/SolidJS with preconfigured formatti
 2. Replace `<app-name>` with undefined
 3. Run the following command to install dependencies:
 
-   ```
-   pnpm install
-   ```
+    ```
+    pnpm install
+    ```
 
 ### Features
 
