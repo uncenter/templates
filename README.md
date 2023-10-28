@@ -1,18 +1,17 @@
 # Templates
 
+- [typescript-package](#typescript-package)
+- [commonjs-package](#commonjs-package)
+- [solidstart-app](#solidstart-app)
+
 ## `typescript-package`
 
 A ready-to-go TypeScript package template with building, testing, linting, and formatting already setup.
 
 ### Setup
 
-1. Clone this repository.
-2. Replace `<package-name>` with undefined
-3. Run the following command to install dependencies:
-
-    ```
-    pnpm install
-    ```
+X. Template installation and customization CLI coming soon!
+X. Run pnpm install to install dependencies.
 
 ### Building
 
@@ -40,13 +39,8 @@ A ready-to-go CJS package template.
 
 ### Setup
 
-1. Clone this repository.
-2. Replace `<package-name>` with undefined
-3. Run the following command to install dependencies:
-
-    ```
-    pnpm install
-    ```
+X. Template installation and customization CLI coming soon!
+X. Run pnpm install to install dependencies.
 
 ### Testing
 
@@ -70,13 +64,8 @@ A simple, bloat-free template for SolidStart/SolidJS with preconfigured formatti
 
 ### Setup
 
-1. Clone this repository.
-2. Replace `<app-name>` with undefined
-3. Run the following command to install dependencies:
-
-    ```
-    pnpm install
-    ```
+X. Template installation and customization CLI coming soon!
+X. Run pnpm install to install dependencies.
 
 ### Features
 
