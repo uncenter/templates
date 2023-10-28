@@ -43,7 +43,7 @@ jobs:
         run: bun install
 
       - name: Generate README.md
-        run: bun run scripts/generateReadme.ts
+        run: bun run scripts/generate.ts
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
