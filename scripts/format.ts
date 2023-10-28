@@ -1,10 +1,10 @@
-import type { Packages } from './utils';
+import type { Templates } from './utils';
 
 import { $ } from 'execa';
 
-import { getPackages } from './utils';
+import { getTemplates } from './utils';
 
-async function executeTemplateFormatCommands(data: Packages) {
+async function executeTemplateFormatCommands(data: Templates) {
 	for (const [name, pkg] of Object.entries(data)) {
 		await $({
 			shell: true,
@@ -12,4 +12,4 @@ async function executeTemplateFormatCommands(data: Packages) {
 	}
 }
 
-await executeTemplateFormatCommands(await getPackages());
+await executeTemplateFormatCommands(await getTemplates());

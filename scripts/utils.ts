@@ -6,7 +6,7 @@ import YAML from 'yaml';
 
 export const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
-export type Package = {
+export type Template = {
 	description: string;
 	setup: {
 		placeholder: string;
@@ -22,12 +22,12 @@ export type Package = {
 	};
 };
 
-export type Packages = { [name: string]: Package };
+export type Templates = { [name: string]: Template };
 
-export const getPackages = async () =>
+export const getTemplates = async () =>
 	YAML.parse(
 		await readFile(
 			resolve(join(__dirname, '../', 'templates.yml')),
 			'utf-8',
 		),
-	) as Packages;
+	) as Templates;

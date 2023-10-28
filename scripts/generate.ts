@@ -1,10 +1,11 @@
-import type { Package, Packages } from './utils';
+import type { Template, Templates } from './utils';
 
 import { writeFile } from 'node:fs/promises';
+import { join, resolve } from 'node:path';
 
-import { getPackages } from './utils';
+import { __dirname, getTemplates } from './utils';
 
-function generateReadmeSection(name: string, data: Package) {
+function generateReadmeSection(name: string, data: Template) {
 	return `
 ## \`${name}\`
 
@@ -12,13 +13,8 @@ ${data.description}
 
 ### Setup
 
-1. Clone this repository.
-2. Replace \`${data.setup.placeholder}\` with ${data.setup.replacewith}
-3. Run the following command to install dependencies:
-
-    \`\`\`
-    ${data.commands.install}
-    \`\`\`
+X. Template installation and customization CLI coming soon!
+X. Run ${data.commands.install} to install dependencies.
 
 ${Object.keys(data.sections)
 	.map((section) => {
@@ -30,17 +26,25 @@ ${Object.keys(data.sections)
 `;
 }
 
-function generateReadme(data: Packages) {
-	return Object.keys(data)
-		.map((name: string) => {
-			return generateReadmeSection(name, data[name]);
-		})
-		.join('');
+function generateReadme(templates: Templates) {
+	let readme = '# Templates\n\n';
+
+	for (const template of Object.keys(templates)) {
+		readme += `- [${template}](#${template})\n`;
+	}
+
+	for (const template of Object.keys(templates)) {
+		readme += generateReadmeSection(template, templates[template]);
+	}
+
+	console.log(readme);
+
+	return readme;
 }
 
 await writeFile(
-	'README.md',
-	'# Templates\n' + generateReadme(await getPackages()),
+	resolve(join(__dirname, '../', 'README.md')),
+	generateReadme(await getTemplates()),
 	'utf-8',
 );
 
