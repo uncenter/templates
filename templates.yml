@@ -1,7 +1,7 @@
 typescript-package:
   description: A ready-to-go TypeScript package template with building, testing, linting, and formatting already setup.
   setup:
-    placeholder: <package-name>
+    placeholder: package-name
     files:
       - README.md
       - package.json
@@ -23,7 +23,7 @@ commonjs-package:
   description: A ready-to-go CJS package template.
   note: Almost entirely the same as [typescript-package](#typescript-package), minus the build step and Typescript-related ESLint stuff.
   setup:
-    placeholder: <package-name>
+    placeholder: package-name
     files:
       - README.md
       - package.json
@@ -43,7 +43,7 @@ commonjs-package:
 solidstart-app:
   description: A simple, bloat-free template for SolidStart/SolidJS with preconfigured formatting and linting.
   setup:
-    placeholder: <app-name>
+    placeholder: app-name
     files:
       - README.md
       - package.json
