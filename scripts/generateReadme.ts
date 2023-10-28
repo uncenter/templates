@@ -16,9 +16,9 @@ ${data.description}
 2. Replace \`${data.setup.placeholder}\` with ${data.setup.replacewith}
 3. Run the following command to install dependencies:
 
-   \`\`\`
-   ${data.commands.install}
-   \`\`\`
+    \`\`\`
+    ${data.commands.install}
+    \`\`\`
 
 ${Object.keys(data.sections)
 	.map((section) => {
@@ -35,7 +35,7 @@ function generateReadme(data: Packages) {
 		.map((name: string) => {
 			return generateReadmeSection(name, data[name]);
 		})
-		.join('\n');
+		.join('');
 }
 
 await writeFile(
