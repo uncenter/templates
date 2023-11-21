@@ -16,7 +16,7 @@ ${data.description}
 ### Setup
 
 1. Template installation and customization CLI coming soon!
-2. Run ${data.commands.install} to install dependencies.
+2. Run \`${data.commands.install}\` to install dependencies.
 
 ${Object.keys(data.sections)
 	.map((section) => {
