@@ -1,17 +1,19 @@
 # Templates
 
--   [typescript-package](#typescript-package)
--   [commonjs-package](#commonjs-package)
--   [solidstart-app](#solidstart-app)
+- [typescript-package](#typescript-package)
+- [commonjs-package](#commonjs-package)
+- [solidstart-app](#solidstart-app)
 
 ## `typescript-package`
+
+[[source](templates/typescript-package/)]
 
 A ready-to-go TypeScript package template with building, testing, linting, and formatting already setup.
 
 ### Setup
 
-X. Template installation and customization CLI coming soon!
-X. Run pnpm install to install dependencies.
+1. Template installation and customization CLI coming soon!
+2. Run pnpm install to install dependencies.
 
 ### Building
 
@@ -35,12 +37,14 @@ All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, 
 
 ## `commonjs-package`
 
+[[source](templates/commonjs-package/)]
+
 A ready-to-go CJS package template.
 
 ### Setup
 
-X. Template installation and customization CLI coming soon!
-X. Run pnpm install to install dependencies.
+1. Template installation and customization CLI coming soon!
+2. Run pnpm install to install dependencies.
 
 ### Testing
 
@@ -60,12 +64,14 @@ All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, 
 
 ## `solidstart-app`
 
+[[source](templates/solidstart-app/)]
+
 A simple, bloat-free template for SolidStart/SolidJS with preconfigured formatting and linting.
 
 ### Setup
 
-X. Template installation and customization CLI coming soon!
-X. Run pnpm install to install dependencies.
+1. Template installation and customization CLI coming soon!
+2. Run pnpm install to install dependencies.
 
 ### Features
 
