@@ -13,7 +13,7 @@ A ready-to-go TypeScript package template with building, testing, linting, and f
 ### Setup
 
 1. Template installation and customization CLI coming soon!
-2. Run pnpm install to install dependencies.
+2. Run `pnpm install` to install dependencies.
 
 ### Building
 
@@ -44,7 +44,7 @@ A ready-to-go CJS package template.
 ### Setup
 
 1. Template installation and customization CLI coming soon!
-2. Run pnpm install to install dependencies.
+2. Run `pnpm install` to install dependencies.
 
 ### Testing
 
@@ -71,7 +71,7 @@ A simple, bloat-free template for SolidStart/SolidJS with preconfigured formatti
 ### Setup
 
 1. Template installation and customization CLI coming soon!
-2. Run pnpm install to install dependencies.
+2. Run `pnpm install` to install dependencies.
 
 ### Features
 
