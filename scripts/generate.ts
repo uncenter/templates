@@ -9,12 +9,14 @@ function generateReadmeSection(name: string, data: Template) {
 	return `
 ## \`${name}\`
 
+[[source](templates/${name}/)]
+
 ${data.description}
 
 ### Setup
 
-X. Template installation and customization CLI coming soon!
-X. Run ${data.commands.install} to install dependencies.
+1. Template installation and customization CLI coming soon!
+2. Run ${data.commands.install} to install dependencies.
 
 ${Object.keys(data.sections)
 	.map((section) => {
