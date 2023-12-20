@@ -13,13 +13,13 @@ A ready-to-go TypeScript package template with building, testing, linting, and f
 ### Setup
 
 ```sh
-# Download the template into the <package-name> directory with one of the commands below:
+# Download the typescript-package template into the <package-name> directory
+# with one of the commands below:
 npx giget@latest gh:uncenter/templates/templates/typescript-package <package-name>
-,pnpm dlx giget@latest gh:uncenter/templates/templates/typescript-package <package-name>
-,bunx giget@latest gh:uncenter/templates/templates/typescript-package <package-name>
+pnpm dlx giget@latest gh:uncenter/templates/templates/typescript-package <package-name>
+bunx giget@latest gh:uncenter/templates/templates/typescript-package <package-name>
 
-
-# Enter template directory and install packages:
+# Enter the template directory and install dependencies:
 cd <package-name>
 pnpm install
 ```
@@ -53,13 +53,13 @@ A ready-to-go CJS package template.
 ### Setup
 
 ```sh
-# Download the template into the <package-name> directory with one of the commands below:
+# Download the commonjs-package template into the <package-name> directory
+# with one of the commands below:
 npx giget@latest gh:uncenter/templates/templates/commonjs-package <package-name>
-,pnpm dlx giget@latest gh:uncenter/templates/templates/commonjs-package <package-name>
-,bunx giget@latest gh:uncenter/templates/templates/commonjs-package <package-name>
+pnpm dlx giget@latest gh:uncenter/templates/templates/commonjs-package <package-name>
+bunx giget@latest gh:uncenter/templates/templates/commonjs-package <package-name>
 
-
-# Enter template directory and install packages:
+# Enter the template directory and install dependencies:
 cd <package-name>
 pnpm install
 ```
@@ -89,13 +89,13 @@ A simple, bloat-free template for SolidStart/SolidJS with preconfigured formatti
 ### Setup
 
 ```sh
-# Download the template into the <app-name> directory with one of the commands below:
+# Download the solidstart-app template into the <app-name> directory
+# with one of the commands below:
 npx giget@latest gh:uncenter/templates/templates/solidstart-app <app-name>
-,pnpm dlx giget@latest gh:uncenter/templates/templates/solidstart-app <app-name>
-,bunx giget@latest gh:uncenter/templates/templates/solidstart-app <app-name>
+pnpm dlx giget@latest gh:uncenter/templates/templates/solidstart-app <app-name>
+bunx giget@latest gh:uncenter/templates/templates/solidstart-app <app-name>
 
-
-# Enter template directory and install packages:
+# Enter the template directory and install dependencies:
 cd <app-name>
 pnpm install
 ```
