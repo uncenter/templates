@@ -15,8 +15,14 @@ ${data.description}
 
 ### Setup
 
-1. Template installation and customization CLI coming soon!
-2. Run \`${data.commands.install}\` to install dependencies.
+\`\`\`sh
+# Download the template into the <${data.setup.placeholder}> directory with one of the commands below:
+${['npx', 'pnpm dlx', 'bunx'].map((c) => `${c} giget@latest gh:uncenter/templates/templates/${name} <${data.setup.placeholder}>\n`)}
+
+# Enter template directory and install packages:
+cd <${data.setup.placeholder}>
+${data.commands.install}
+\`\`\`
 
 ${Object.keys(data.sections)
 	.map((section) => {
