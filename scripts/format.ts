@@ -8,7 +8,7 @@ async function executeTemplateFormatCommands(data: Templates) {
 	for (const [name, pkg] of Object.entries(data)) {
 		await $({
 			shell: true,
-		})`cd templates/${name}/ && ${pkg.commands.format}`;
+		})`cd templates/${name}/ && ${pkg.commands.install} && ${pkg.commands.format}`;
 	}
 }
 

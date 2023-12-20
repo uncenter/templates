@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"format": "prettier --write .",
+		"format:docs": "prettier --write **/README.md",
 		"lint": "eslint ./scripts/"
 	},
 	"dependencies": {
