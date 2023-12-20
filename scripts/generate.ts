@@ -16,8 +16,13 @@ ${data.description}
 ### Setup
 
 \`\`\`sh
-# Download the template into the <${data.setup.placeholder}> directory with one of the commands below:
-${['npx', 'pnpm dlx', 'bunx'].map((c) => `${c} giget@latest gh:uncenter/templates/templates/${name} <${data.setup.placeholder}>\n`)}
+# Download the template into the <${
+		data.setup.placeholder
+	}> directory with one of the commands below:
+${['npx', 'pnpm dlx', 'bunx'].map(
+	(c) =>
+		`${c} giget@latest gh:uncenter/templates/templates/${name} <${data.setup.placeholder}>\n`,
+)}
 
 # Enter template directory and install packages:
 cd <${data.setup.placeholder}>
