@@ -23,7 +23,7 @@
 		"format": "prettier --write ."
 	},
 	"dependencies": {
-		"tiny-bin": "^1.7.0"
+		"citty": "^0.1.5"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^6.9.0",

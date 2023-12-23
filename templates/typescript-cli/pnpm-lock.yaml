@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  tiny-bin:
-    specifier: ^1.7.0
-    version: 1.7.0
+  citty:
+    specifier: ^0.1.5
+    version: 0.1.5
 
 devDependencies:
   '@typescript-eslint/eslint-plugin':
@@ -1027,10 +1027,6 @@ packages:
       uri-js: 4.4.1
     dev: true
 
-  /ansi-purge@1.0.0:
-    resolution: {integrity: sha512-kbm4dtp1jcI8ZWhttEPzmga9fwbhGMinIDghOcBng5q9dOsnM6PYV3ih+5TO4D7inGXU9zBmVi7x1Z4dluY85Q==}
-    dev: false
-
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -1212,11 +1208,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /citty@0.1.4:
-    resolution: {integrity: sha512-Q3bK1huLxzQrvj7hImJ7Z1vKYJRPQCDnd0EjXfHMidcjecGOMuLrmuQmtWmFkuKLcMThlGh1yCKG8IEc6VeNXQ==}
+  /citty@0.1.5:
+    resolution: {integrity: sha512-AS7n5NSc0OQVMV9v6wt3ByujNIrne0/cTjiC2MYqhvao57VNfiuVksTSr2p17nVOhEr2KtqiAkGwHcgMC/qUuQ==}
     dependencies:
       consola: 3.2.3
-    dev: true
 
   /clean-regexp@1.0.0:
     resolution: {integrity: sha512-GfisEZEJvzKrmGWkvfhgzcz/BllN1USeqD2V6tg14OAOgaCD2Z/PUEuxnAZ/nPvmaHRG7a8y77p1T/IRQ4D1Hw==}
@@ -1259,7 +1254,6 @@ packages:
   /consola@3.2.3:
     resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
-    dev: true
 
   /convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -1751,10 +1745,6 @@ packages:
       to-regex-range: 5.0.1
     dev: true
 
-  /find-up-json@2.0.2:
-    resolution: {integrity: sha512-UpHMIdzLzZNHZ0vXVv3kHr2vq2MWA+hA8zlzlPH5XMGyYisIr/7/dNm5AjWR3ae6Onie9a1zgtExOqix+8ESQw==}
-    dev: false
-
   /find-up@4.1.0:
     resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==}
     engines: {node: '>=8'}
@@ -1833,12 +1823,6 @@ packages:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
     dev: true
-
-  /get-current-package@1.0.0:
-    resolution: {integrity: sha512-mEZ43mmPMdRz+7vouBd/fhnEMRF0omBzcwwwf2GmbWSeZJGdWHRp9RGLZxW7ZnnZ14jPc3GreHh0s/7u7PZJpQ==}
-    dependencies:
-      find-up-json: 2.0.2
-    dev: false
 
   /get-intrinsic@1.2.2:
     resolution: {integrity: sha512-0gSo4ml/0j98Y3lngkFEot/zhiCeWsbYIlZ+uZOVgzLyLaUw7wxUL+nCTP0XJvJg1AXulJRI3UJi8GsbDuxdGA==}
@@ -2049,10 +2033,6 @@ packages:
       hasown: 2.0.0
       side-channel: 1.0.4
     dev: true
-
-  /ionstore@1.0.0:
-    resolution: {integrity: sha512-ikEvmeZFh9u5SkjKbFqJlmmhaQTulB3P7QoSoZ/xL8EDP5uj5QWbPeKcQ8ZJtszBLHRRnhIJJE8P1dhFx/oCMw==}
-    dev: false
 
   /is-array-buffer@3.0.2:
     resolution: {integrity: sha512-y+FyyR/w8vfIRq4eQcM1EYgSTnmHXPqaF+IgzgraytCFq5Xh8lllDVmAZolPJiZttZLeFSINPYMaEJ7/vWUa1w==}
@@ -2393,7 +2373,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      citty: 0.1.4
+      citty: 0.1.5
       defu: 6.1.2
       esbuild: 0.18.20
       fs-extra: 11.1.1
@@ -2907,37 +2887,6 @@ packages:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
 
-  /tiny-bin@1.7.0:
-    resolution: {integrity: sha512-6zK6sJysdpFy+5cYzYtbsaLTcTBBRAzsFKIHUBeo/UPhWqV/lyRqWNvndWRk4jeXidYPsRz7d8YDSs49jv8M2w==}
-    dependencies:
-      ansi-purge: 1.0.0
-      get-current-package: 1.0.0
-      tiny-colors: 2.1.2
-      tiny-levenshtein: 1.0.0
-      tiny-parse-argv: 2.4.0
-      tiny-updater: 3.5.1
-    dev: false
-
-  /tiny-colors@2.1.2:
-    resolution: {integrity: sha512-6peGRBtkYBJpVrQUWOPKrC0ECo6WotUlXxirVTKvihjdgxQETpKtLdCKIb68IHjJYH1AOE7GM7RnxFvkGHsqOg==}
-    dev: false
-
-  /tiny-levenshtein@1.0.0:
-    resolution: {integrity: sha512-27KxXZhuXCP+xol3k4jMWms8+B6H2qEUlBMTmB5YT3uvFXFNft4Hw/MqurrHkDdC01nx1HIADcE1wR40byJf4Q==}
-    dev: false
-
-  /tiny-parse-argv@2.4.0:
-    resolution: {integrity: sha512-WTEsnmeHNr99hLQIDA+gnsS+fDsCDITlqgI+zEhx9M6ErPt0heoNZ1PGvql6wcf95sIx40J0MLYXaPveGwtpoA==}
-    dev: false
-
-  /tiny-updater@3.5.1:
-    resolution: {integrity: sha512-kh1922FSNPTmrdr353x+xJRTrrVFl9zq/Q1Vz47YNWhTO0jn3ZyZd6Cahe8qW5MLXg+gia+0G7b6HIgW7pbBMg==}
-    dependencies:
-      ionstore: 1.0.0
-      tiny-colors: 2.1.2
-      when-exit: 2.1.2
-    dev: false
-
   /to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
@@ -3063,7 +3012,7 @@ packages:
       '@rollup/plugin-replace': 5.0.3(rollup@3.29.4)
       '@rollup/pluginutils': 5.0.5(rollup@3.29.4)
       chalk: 5.3.0
-      citty: 0.1.4
+      citty: 0.1.5
       consola: 3.2.3
       defu: 6.1.2
       esbuild: 0.19.4
@@ -3129,10 +3078,6 @@ packages:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
     dev: true
-
-  /when-exit@2.1.2:
-    resolution: {integrity: sha512-u9J+toaf3CCxCAzM/484qNAxQE75rFdVgiFEEV8Xps2gzYhf0tx73s1WXDQhkwV17E3MxRMz40m7Ekd2/121Lg==}
-    dev: false
 
   /which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
