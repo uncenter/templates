@@ -13,15 +13,8 @@
 		"LICENSE",
 		"dist/"
 	],
-	"main": "./dist/index.cjs",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.cjs"
-		}
-	},
+	"exports": "./dist/bin.mjs",
+	"bin": "dist/bin.mjs",
 	"type": "module",
 	"scripts": {
 		"build": "unbuild",
