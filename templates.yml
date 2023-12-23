@@ -19,6 +19,28 @@ typescript-package:
   commands:
     format: pnpm format
     install: pnpm install
+
+typescript-cli:
+  description: A very opinionated TypeScript template for building CLI packages.
+  setup:
+    placeholder: package-name
+    files:
+      - README.md
+      - package.json
+      - src/bin.ts
+  sections:
+    building: |-
+      Uses [unbuild](https://github.com/unjs/unbuild), which utilizes [rollup](https://rollupjs.org/) and [esbuild](https://github.com/evanw/esbuild) under the hood. Not the fastest option, but the only one so far that works out-of-the-box and is easy to configure.
+    linting: |-
+      Uses [ESLint](https://eslint.org/) with [typescript-eslint](https://typescript-eslint.io/), [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) to disable conflicting eslint style rules, [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import) for opinionated import sorting, and [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn) to enforce good practices.
+    formatting: |-
+      Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
+    other: |-
+      All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, linting, testing, and releasing are in `.github/workflows/`.
+  commands:
+    format: pnpm format
+    install: pnpm install
+
 commonjs-package:
   description: A ready-to-go CJS package template.
   note: Almost entirely the same as [typescript-package](#typescript-package), minus the build step and Typescript-related ESLint stuff.
