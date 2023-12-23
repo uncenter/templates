@@ -2,7 +2,11 @@
 
 import { defineCommand, runMain } from 'citty';
 
-import { name, version, description } from '../package.json' assert { type: 'json' };
+import {
+	name,
+	version,
+	description,
+} from '../package.json' assert { type: 'json' };
 
 const main = defineCommand({
 	meta: {
@@ -12,12 +16,12 @@ const main = defineCommand({
 	},
 	args: {
 		name: {
-			type: "positional",
-			description:"Your name!"
-		}
+			type: 'positional',
+			description: 'Your name!',
+		},
 	},
 	async run({ args }) {
-		console.log(`Hello, ${args.name}!`)
+		console.log(`Hello, ${args.name}!`);
 	},
 });
 
