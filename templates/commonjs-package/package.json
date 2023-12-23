@@ -18,7 +18,7 @@
 	"scripts": {
 		"test": "vitest",
 		"lint": "eslint .",
-		"autofix": "eslint --fix .",
+		"lint:fix": "eslint --fix .",
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
