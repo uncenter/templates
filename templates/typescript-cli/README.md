@@ -1,20 +1,11 @@
 # package-name
 
-## Installation
-
-```sh
-npm i package-name
-pnpm add package-name
-yarn add package-name
-bun add package-name
-```
-
 ## Usage
 
-```ts
-import x from 'package-name';
-
-x();
+```
+npx package-name@latest
+pnpm dlx package-name@latest
+bunx package-name@latest
 ```
 
 ## License
