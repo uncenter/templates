@@ -1,12 +1,13 @@
-name: Lint
+name: Check
 
 on:
   push:
     branches: [main, dev]
   pull_request:
+  workflow_call:
 
 jobs:
-  lint:
+  check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,3 +26,6 @@ jobs:
 
       - name: Lint
         run: pnpm lint
+
+      - name: Test
+        run: pnpm test

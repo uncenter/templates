@@ -1,12 +1,13 @@
-name: Lint
+name: Check
 
 on:
   push:
     branches: [main, dev]
   pull_request:
+  workflow_call:
 
 jobs:
-  lint:
+  check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,8 +24,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Check types
-        run: pnpm check
+      - name: Types
+        run: pnpm types
 
       - name: Lint
         run: pnpm lint
+
+      - name: Test
+        run: pnpm test
+

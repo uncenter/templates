@@ -18,9 +18,8 @@
 	"type": "module",
 	"scripts": {
 		"build": "unbuild",
-		"check": "tsc",
+		"types": "tsc",
 		"lint": "eslint .",
-		"lint:fix": "eslint --fix .",
 		"format": "prettier --write ."
 	},
 	"dependencies": {
