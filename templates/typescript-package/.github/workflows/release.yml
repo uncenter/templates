@@ -6,8 +6,8 @@ on:
       - "v*.*.*"
 
 jobs:
-  lint:
-    uses: ./.github/workflows/check.yml
+  check:
+    uses: ./.github/workflows/ci.yml
   release:
     runs-on: ubuntu-latest
     permissions:

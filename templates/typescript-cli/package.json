@@ -18,8 +18,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "unbuild",
-		"types": "tsc",
-		"lint": "eslint .",
+		"lint": "tsc && eslint .",
 		"format": "prettier --write ."
 	},
 	"dependencies": {

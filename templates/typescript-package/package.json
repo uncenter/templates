@@ -26,8 +26,7 @@
 	"scripts": {
 		"build": "unbuild",
 		"test": "vitest",
-		"types": "tsc",
-		"lint": "eslint .",
+		"lint": "tsc && eslint .",
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
