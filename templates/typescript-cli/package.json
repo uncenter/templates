@@ -3,10 +3,7 @@
 	"version": "0.1.0",
 	"description": "",
 	"author": "uncenter <hi@uncenter.dev>",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/uncenter/package-name.git"
-	},
+	"repository": "uncenter/package-name",
 	"license": "MIT",
 	"files": [
 		"README.md",
