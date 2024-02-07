@@ -1,0 +1,19 @@
+[package]
+name = "package-name"
+version = "0.1.0"
+authors = ["uncenter <uncenter@uncenter.dev>"]
+license = "MIT"
+description = ""
+readme = "README.md"
+homepage = "https://github.com/uncenter/package-name"
+repository = "https://github.com/uncenter/package-name"
+keywords = ["cli"]
+categories = ["command-line-utilities"]
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"

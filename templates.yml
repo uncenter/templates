@@ -1,3 +1,24 @@
+
+rust-cli:
+  description: A simple template for getting a Rust CLI up-and-running as fast as possible.
+  setup:
+    placeholder: package-name
+    files:
+      - README.md
+      - Cargo.toml
+      - .github/workflows/build.yml
+  sections:
+    features: Includes [clap](https://github.com/clap-rs/clap) for argument parsing.
+    linting: |-
+      Uses [Clippy](https://rust-lang.github.io/rust-clippy/) with `pedantic = "warn"`.
+    formatting: |-
+      Uses [rustfmt](https://rust-lang.github.io/rustfmt/) and a `.editorconfig` file.
+    other: |-
+      Workflows for building, linting, and releasing are in `.github/workflows/`.
+  commands:
+    format: cargo fmt
+    install: cargo build
+
 typescript-cli:
   description: A very opinionated TypeScript template for building CLI packages.
   setup:
@@ -14,7 +35,7 @@ typescript-cli:
     formatting: |-
       Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
     other: |-
-      All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, linting, testing, and releasing are in `.github/workflows/`.
+      All of this is managed with [pnpm](https://pnpm.io/). Workflows for building, linting, testing, and releasing are in `.github/workflows/`.
   commands:
     format: pnpm format
     install: pnpm install
@@ -36,7 +57,7 @@ typescript-package:
     formatting: |-
       Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
     other: |-
-      All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, linting, testing, and releasing are in `.github/workflows/`.
+      All of this is managed with [pnpm](https://pnpm.io/). Workflows for building, linting, testing, and releasing are in `.github/workflows/`.
   commands:
     format: pnpm format
     install: pnpm install
@@ -57,7 +78,7 @@ commonjs-package:
     formatting: |-
       Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
     other: |-
-      All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, linting, testing, and releasing are in `.github/workflows/`.
+      All of this is managed with [pnpm](https://pnpm.io/). Workflows for linting, testing, and releasing are in `.github/workflows/`.
   commands:
     format: pnpm format
     install: pnpm install
@@ -77,8 +98,6 @@ solidstart-app:
       Uses [ESLint](https://eslint.org/) with [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) to disable conflicting eslint style rules, [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import) for opinionated import sorting, [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn) to enforce good practices, and [`eslint-plugin-solid`](https://github.com/solidjs-community/eslint-plugin-solid) for Solid-specific linting.
     formatting: |-
       Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
-    other: |-
-      All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting and linting are in `.github/workflows/`.
   commands:
     format: pnpm format
     install: pnpm install
