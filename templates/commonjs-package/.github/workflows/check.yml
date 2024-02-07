@@ -1,10 +1,11 @@
-name: CI
+name: Check
 
 on:
   workflow_call:
   push:
-    branches: [main, dev]
+    branches: [main]
   pull_request:
+    branches: [main]
 
 jobs:
   test:
@@ -47,7 +48,7 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-  build:
+  format:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -58,11 +59,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
+            cache: pnpm
+            cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build
-        run: pnpm build
+      - name: Format
+        run: pnpm prettier --check .
