@@ -1,9 +1,46 @@
 # Templates
 
+-   [rust-cli](#rust-cli)
 -   [typescript-cli](#typescript-cli)
 -   [typescript-package](#typescript-package)
 -   [commonjs-package](#commonjs-package)
 -   [solidstart-app](#solidstart-app)
+
+## `rust-cli`
+
+[[source](templates/rust-cli/)]
+
+A simple template for getting a Rust CLI up-and-running as fast as possible.
+
+### Setup
+
+```sh
+# Download the rust-cli template into the <package-name> directory
+# with one of the commands below:
+npx giget@latest gh:uncenter/templates/templates/rust-cli <package-name>
+pnpm dlx giget@latest gh:uncenter/templates/templates/rust-cli <package-name>
+bunx giget@latest gh:uncenter/templates/templates/rust-cli <package-name>
+
+# Enter the template directory and install dependencies:
+cd <package-name>
+cargo build
+```
+
+### Features
+
+Includes [clap](https://github.com/clap-rs/clap) for argument parsing.
+
+### Linting
+
+Uses [Clippy](https://rust-lang.github.io/rust-clippy/) with `pedantic = "warn"`.
+
+### Formatting
+
+Uses [rustfmt](https://rust-lang.github.io/rustfmt/) and a `.editorconfig` file.
+
+### Other
+
+Workflows for building, linting, and releasing are in `.github/workflows/`.
 
 ## `typescript-cli`
 
@@ -39,7 +76,7 @@ Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
 
 ### Other
 
-All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, linting, testing, and releasing are in `.github/workflows/`.
+All of this is managed with [pnpm](https://pnpm.io/). Workflows for building, linting, testing, and releasing are in `.github/workflows/`.
 
 ## `typescript-package`
 
@@ -79,7 +116,7 @@ Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
 
 ### Other
 
-All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, linting, testing, and releasing are in `.github/workflows/`.
+All of this is managed with [pnpm](https://pnpm.io/). Workflows for building, linting, testing, and releasing are in `.github/workflows/`.
 
 ## `commonjs-package`
 
@@ -115,7 +152,7 @@ Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
 
 ### Other
 
-All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting, linting, testing, and releasing are in `.github/workflows/`.
+All of this is managed with [pnpm](https://pnpm.io/). Workflows for linting, testing, and releasing are in `.github/workflows/`.
 
 ## `solidstart-app`
 
@@ -148,7 +185,3 @@ Uses [ESLint](https://eslint.org/) with [`eslint-config-prettier`](https://githu
 ### Formatting
 
 Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
-
-### Other
-
-All of this is managed with [pnpm](https://pnpm.io/). Workflows for formatting and linting are in `.github/workflows/`.
