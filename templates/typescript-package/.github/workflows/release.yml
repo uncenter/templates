@@ -8,12 +8,12 @@ on:
 jobs:
   check:
     uses: ./.github/workflows/check.yml
-  release:
+
+  publish:
     needs: [check]
     runs-on: ubuntu-latest
     permissions:
       id-token: write
-      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,7 +40,11 @@ jobs:
         run: |
           pnpm publish --no-git-checks --access public
 
+  release:
+    needs: [publish]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
       - name: Release
         uses: softprops/action-gh-release@v1
-        with:
-          generate_release_notes: true
