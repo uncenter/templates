@@ -7,6 +7,7 @@ rust-cli:
       - README.md
       - Cargo.toml
       - .github/workflows/build.yml
+      - scripts/build.sh
   sections:
     features: Includes [clap](https://github.com/clap-rs/clap) for argument parsing.
     linting: |-
