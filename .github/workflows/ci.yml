@@ -5,33 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  generate-readme:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
-
-      - name: Install dependencies
-        run: bun install
-
-      - name: Generate README.md
-        run: bun run scripts/generate.ts
-
-      - name: Format READMEs
-        run: bun run format:docs
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          default_author: github_actions
-          message: "docs: update READMEs"
-
-  format:
+  main:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -60,6 +34,18 @@ jobs:
 
       - name: Install dependencies
         run: bun install
+
+      - name: Generate README.md
+        run: bun run scripts/generate.ts
+
+      - name: Format READMEs
+        run: bun run format:docs
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: "docs: update README"
 
       - name: Format non-template files
         run: bun run scripts/format.ts
