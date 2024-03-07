@@ -1,10 +1,10 @@
 # Templates
 
--   [rust-cli](#rust-cli)
--   [typescript-cli](#typescript-cli)
--   [typescript-package](#typescript-package)
--   [commonjs-package](#commonjs-package)
--   [solidstart-app](#solidstart-app)
+- [rust-cli](#rust-cli)
+- [typescript-cli](#typescript-cli)
+- [typescript-package](#typescript-package)
+- [commonjs-package](#commonjs-package)
+- [solidstart-app](#solidstart-app)
 
 ## `rust-cli`
 
