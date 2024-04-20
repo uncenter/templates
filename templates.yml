@@ -83,22 +83,3 @@ commonjs-package:
   commands:
     format: pnpm format
     install: pnpm install
-
-solidstart-app:
-  description: A simple, bloat-free template for SolidStart/SolidJS with preconfigured formatting and linting.
-  setup:
-    placeholder: app-name
-    files:
-      - README.md
-      - package.json
-      - public/site.webmanifest
-      - root.tsx
-  sections:
-    features: Includes TailwindCSS and has [shadcn-solid](https://shadcn-solid.vercel.app/docs/introduction) already intialized.
-    linting: |-
-      Uses [ESLint](https://eslint.org/) with [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) to disable conflicting eslint style rules, [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import) for opinionated import sorting, [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn) to enforce good practices, and [`eslint-plugin-solid`](https://github.com/solidjs-community/eslint-plugin-solid) for Solid-specific linting.
-    formatting: |-
-      Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
-  commands:
-    format: pnpm format
-    install: pnpm install
