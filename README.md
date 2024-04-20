@@ -4,7 +4,6 @@
 - [typescript-cli](#typescript-cli)
 - [typescript-package](#typescript-package)
 - [commonjs-package](#commonjs-package)
-- [solidstart-app](#solidstart-app)
 
 ## `rust-cli`
 
@@ -153,35 +152,3 @@ Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
 ### Other
 
 All of this is managed with [pnpm](https://pnpm.io/). Workflows for linting, testing, and releasing are in `.github/workflows/`.
-
-## `solidstart-app`
-
-[[source](templates/solidstart-app/)]
-
-A simple, bloat-free template for SolidStart/SolidJS with preconfigured formatting and linting.
-
-### Setup
-
-```sh
-# Download the solidstart-app template into the <app-name> directory
-# with one of the commands below:
-npx giget@latest gh:uncenter/templates/templates/solidstart-app <app-name>
-pnpm dlx giget@latest gh:uncenter/templates/templates/solidstart-app <app-name>
-bunx giget@latest gh:uncenter/templates/templates/solidstart-app <app-name>
-
-# Enter the template directory and install dependencies:
-cd <app-name>
-pnpm install
-```
-
-### Features
-
-Includes TailwindCSS and has [shadcn-solid](https://shadcn-solid.vercel.app/docs/introduction) already intialized.
-
-### Linting
-
-Uses [ESLint](https://eslint.org/) with [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) to disable conflicting eslint style rules, [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import) for opinionated import sorting, [`eslint-plugin-unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn) to enforce good practices, and [`eslint-plugin-solid`](https://github.com/solidjs-community/eslint-plugin-solid) for Solid-specific linting.
-
-### Formatting
-
-Uses [Prettier](https://prettier.io/) and a `.editorconfig` file.
